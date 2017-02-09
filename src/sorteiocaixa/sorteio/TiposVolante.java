@@ -1,5 +1,7 @@
 package sorteiocaixa.sorteio;
 
+
+
 public class TiposVolante {
 	
 	public static final byte LOTOMANIA = 100;
