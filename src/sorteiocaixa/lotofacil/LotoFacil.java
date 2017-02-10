@@ -6,10 +6,8 @@ import sorteiocaixa.sorteio.Volante;
 public class LotoFacil implements RegrasLotofacil {
 	
 	public Volante volante;
-	
 	private double arrecadacao;
-	
-
+	NumerosSortiados numerosSortiados;
 
 	public LotoFacil(){
 		this.volante = new Volante(TipoVolanteSorteio.LOTOFACIL);
