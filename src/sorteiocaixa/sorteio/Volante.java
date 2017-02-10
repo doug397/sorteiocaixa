@@ -6,7 +6,7 @@ public class Volante {
 	
 	
 	TipoVolanteSorteio tipoVolante;
-	int [] numeros;
+	public int [] numeros;
 	
 	
 	public Volante(TipoVolanteSorteio tipoVolante){

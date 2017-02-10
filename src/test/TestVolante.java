@@ -1,4 +1,4 @@
-package sorteiocaixa.sorteio;
+package test;
 
 import sorteiocaixa.lotofacil.LotoFacil;
 import sorteiocaixa.lotomania.Lotomania;
