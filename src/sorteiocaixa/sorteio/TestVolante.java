@@ -1,19 +1,23 @@
 package sorteiocaixa.sorteio;
 
+import sorteiocaixa.lotofacil.LotoFacil;
+import sorteiocaixa.lotomania.Lotomania;
+
 public class TestVolante {
 
 	public static void main(String[] args) {
 		
-		
-		Volante volante= new Volante(TipoVolanteSorteio.LOTOFACIL);
-		
-		Volante volo= new Volante(TipoVolanteSorteio.LOTOMANIA);
+		LotoFacil loto= new LotoFacil();
+		Lotomania mania= new Lotomania();
 		
 		
-		System.out.println(volante.getTipoVolante());
+		System.out.println(loto.volante.numeros.length);
+		System.out.println(loto.volante.toString());
 		
-		System.out.println(volante.getTipoVolante().getTam());
 		
+
+		System.out.println(mania.volante.numeros.length);
+		System.out.println(mania.volante.toString());
 		
 
 	}
