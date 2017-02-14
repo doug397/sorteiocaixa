@@ -1,24 +1,14 @@
 package sorteiocaixa.lotomania;
 
+import sorteiocaixa.sorteio.Jogo;
 import sorteiocaixa.sorteio.TipoVolanteSorteio;
 import sorteiocaixa.sorteio.Volante;
 
-public class Lotomania implements RegrasLotomania {
-	
-	public Volante volante;
-	private double arrecadacao;
-	
-	public double getArrecadacao() {
-		return arrecadacao;
-	}
+public class Lotomania extends Jogo implements RegrasLotomania {
 
-	public void setArrecadacao(double arrecadacao) {
-		this.arrecadacao = arrecadacao;
-	}
-
-	public Lotomania(){
-		this.volante= new Volante(TipoVolanteSorteio.LOTOMANIA);
-		
+	public Lotomania(TipoVolanteSorteio tipo) {
+		super(tipo);
+		// TODO Auto-generated constructor stub
 	}
 
 	@Override
@@ -56,5 +46,8 @@ public class Lotomania implements RegrasLotomania {
 		// TODO Auto-generated method stub
 		return 0;
 	}
+	
+
+
 	
 }

@@ -1,49 +1,33 @@
 package sorteiocaixa.lotofacil;
 
+import sorteiocaixa.sorteio.Jogo;
 import sorteiocaixa.sorteio.TipoVolanteSorteio;
 import sorteiocaixa.sorteio.Volante;
 
-public class LotoFacil implements RegrasLotofacil {
-	
-	public Volante volante;
-	private double arrecadacao;
-	NumerosSortiados numerosSortiados;
+public class LotoFacil extends Jogo implements RegrasLotofacil {
 
-	public LotoFacil(){
-		this.volante = new Volante(TipoVolanteSorteio.LOTOFACIL);
-		
+	public LotoFacil(TipoVolanteSorteio tipo) {
+		super(tipo);
+		// TODO Auto-generated constructor stub
 	}
-	
-	public double getArrecadacao() {
-		return arrecadacao;
-	}
-
-
-	public void setArrecadacao(double arrecadacao) {
-		this.arrecadacao = arrecadacao;
-	}
-
 
 	@Override
 	public double onzeAcertos() {
 		// TODO Auto-generated method stub
-		return 4;
+		return 0;
 	}
-
 
 	@Override
 	public double dozeAcertos() {
 		// TODO Auto-generated method stub
-		return 8;
+		return 0;
 	}
-
 
 	@Override
 	public double trezeAcertos() {
 		// TODO Auto-generated method stub
-		return 20;
+		return 0;
 	}
-
 
 	@Override
 	public double quartorzeAcertos() {
@@ -51,13 +35,11 @@ public class LotoFacil implements RegrasLotofacil {
 		return 0;
 	}
 
-
 	@Override
 	public double quinzeAcertos() {
 		// TODO Auto-generated method stub
 		return 0;
 	}
 	
-
-
+	
 }
